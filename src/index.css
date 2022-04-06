@@ -11,3 +11,64 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+.container{
+  max-width: 960px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-top: .1em;
+}
+.notes-list{
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(auto-fit,minmax(250px,1rem));
+}
+.note.new{
+  background-color: aqua;
+}
+textarea{
+  border:none;
+  resize: none;
+  background-color: aqua;
+}
+textarea:focus{
+  outline: none;
+}
+.save{
+  background-color:wheat;
+  border-radius: 15px;
+  padding: 5px 10px 5px 10px;
+}
+.save:hover{
+  background-color: aquamarine;
+  cursor: pointer;
+}
+.note{
+  background-color: #fef684;
+  border-radius: 10px;
+  padding: 1rem;
+  min-height: 170px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.note-footer{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.note-delete{
+  border-radius: 15px;
+}
+.note-delete:hover{
+  background-color: #fef684;
+  cursor: pointer;
+}
+.note-edit{
+  border-radius: 15px;
+}
+.note-edit:hover{
+  background-color: #fef684;
+  cursor: pointer;
+}
